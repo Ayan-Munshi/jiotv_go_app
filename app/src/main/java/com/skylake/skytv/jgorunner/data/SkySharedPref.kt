@@ -155,10 +155,15 @@ class SkySharedPref(context: Context) {
         @SharedPrefKey("tv_layout_mode") var tvLayoutMode: String? = "Default",
         @SharedPrefKey("unitHolder") var unitHolder: Int = 0,
         @SharedPrefKey("customPlaylistSupport") var customPlaylistSupport: Boolean = false,
+        @SharedPrefKey("cardUiExperiment") var cardUiExperiment: Boolean = false,
         @SharedPrefKey("genericTvIcon") var genericTvIcon: Boolean = false,
         @SharedPrefKey("preRelease") var preRelease: Boolean = false,
         @SharedPrefKey("epgDebug") var epgDebug: Boolean = false,
         @SharedPrefKey("lastSelectedCategoriesExp") var lastSelectedCategoriesExp: String? = "",
+
+        // Widget-specific preferences
+        @SharedPrefKey("widget_show_logs") var widgetShowLogs: Boolean = false,
+        @SharedPrefKey("widget_logs") var widgetLogs: String? = ""
 
 
 
